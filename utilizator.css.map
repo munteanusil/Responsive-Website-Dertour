@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,KAAK,CAAC;EACF,WAAW,EAAC,IAAI;EAAC,cAAc;CAChC",
+    "sources": [
+        "utilizator.scss"
+    ],
+    "names": [],
+    "file": "utilizator.css"
+}

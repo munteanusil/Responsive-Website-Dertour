@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>DerTour </title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="  crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up"></i><br> SUS</button>
+    <div id="parent-container" class="col-sm">
+        
+        <div id="principal-header" class="col-sm">
+          <header class="second-header">
+            <div id="headerlogo">
+              <a href="index.html">
+                <img src="https://www.dertour.ro/library/media/dertour/common/header/dertour-logo.svg?la=ro-RO&hash=184A751C53942063F0E1D29DC63B1F27762E0426" alt="">
+                </a>
+              </div>
+            <div class="headerbarright">
+              <ul>
+                <li><i class="fa fa-envelope menu-main-icon"></i> Solicita oferta</li>
+                <li><i class="fa fa-map-marker menu-main-icon"></i> Agentii dertour</li>
+                <div class="dropdown">
+                  <li><a href="#" class="dropbtn"><i class="fa fa-phone menu-main-icon"></i> Contact</a></li>
+                  <div class="dropdown-content">
+                  <a href="#"><i class="fa fa-phone menu-main-icon"></i> Apeleaza cu incredere<br><br>
+                  031.438.33.55 <br><br>
+                  031.438.33.22 
+                  </a><hr>
+                  <a href="contact x.html"><i class="fa fa-envelope menu-main-icon"></i> Scrie un mesaj<br><br>
+                  oferte@dertour.ro
+                  </a><hr>
+                  <a href="#"><i class="fa fa-map-marker menu-main-icon"></i> Agentii in orasul tau<br><br>
+                    Agentii acreditate Dertour
+                  </a>
+                  </div>
+                </div>
+
+                <div class="dropdown">
+                  <li><a href="#" class="dropbtn"><i class="fa fa-user menu_main_icon menu-main-icon"></i> Cont</a></li>
+                  <div class="dropdown-content">
+                  <a href="login.html">Intra in cont</a><hr>
+                  <a href="sign up.html">Creeaza cont nou</a><hr>
+                  <a href="utilizator x.html">Date Profil</a>
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </header>
+
+          <header class="second-header-menu">
+            <div class="headerbar">
+            <ul>
+              <li><a href="#">Pachete vacanta</a></li>
+              <li><a href="#">Hoteluri</a></li>
+              <li><a href="#">Bilete avion</a></li>
+              <li><a href="#">Bilete autocar</a></li>
+              <li><a href="#">Oferte speciale</a></li>
+              <li><a href="#">Destinatii</a></li>
+              <li><a href="#">Vouchere cadou</a></li>
+            </ul>
+            </div>
+          </header>
+        </div>
+
+        <div id="main" class="col-sm">
+
+          <section>
+            <div class="tab">
+              <button class="tablinks" style="background-color:#092a5e; color: white;" onclick="openTab(event, 'London')"><i class="fa fa-plane"></i> <i class="fa fa-building"></i> Avion + Cazare</button>
+              <button class="tablinks" onclick="openTab(event, 'Paris')"><i class="fa fa-building"></i> Hoteluri</button>
+              <button class="tablinks" onclick="openTab(event, 'Tokyo')"><i class="fa fa-plane"></i> Bilete avion</button>
+              <button class="tablinks" onclick="openTab(event, 'Tokyo')"><i class="fa fa-map-marker menu-main-icon"></i> Early Booking 2022</button>
+              <button class="tablinks" onclick="openTab(event, 'Tokyo')"><i class="fa fa-clock-o"></i> Last Minute</button>
+              <button class="tablinks" onclick="openTab(event, 'Tokyo')"><i class="fa fa-globe"></i> Vacante Exotice</button>
+            </div>
+            
+            <div id="London" class="tabcontent">
+              <h5>Pachete de vacanta cu zbor inclus</h5>
+              
+              <div class="partonesearch">
+              <div class="w3-row-padding">
+                <div class="w3-col w3-container" style="width:200px">
+                  <label>1.Alege o destinatie</label>
+                  <input class="w3-input w3-border" type="text" placeholder="Regiune, Statiune, Hotel">
+                  </div>
+                  
+                  <div class="w3-col w3-container" style="width:160px">
+                  <label>2.Orasul de plecare</label>
+                  <!-- <input class="w3-input w3-border" type="text" placeholder="Alege orasul"> -->
+                  <select class="w3-input w3-border">
+                    <option selected>Alege orasul</option>
+                    <option>Bucuresti </option>
+                    <option>Cluj-Napoca</option>
+                    <option>Iasi</option>
+                    <option>Oradea</option>
+                    <option>Timisoara</option>
+            
+
+                  </select>
+                  </div>
+                  
+                  <div class="w3-col w3-container" style="width:150px">
+                  <label>3.Data de plecare</label>
+                  <input  class="w3-input w3-border" type="date" placeholder="Plecare">
+                  </div>
+                  
+                  <div class="w3-col w3-container" style="width:130px">
+                  <label>4.Durata sejur</label>
+                  <!-- <input class="w3-input w3-border" type="text" placeholder="Alege"> -->
+                  <select class="w3-input w3-border">
+                    <option selected>Alege</option>
+                    <option>1 zi</option>
+                    <option>2 zile</option>
+                    <option>3 zile</option>
+                    <option>4 zile</option>
+                    <option>5 zile</option>
+                    <option>6 zile</option>
+                    <option>7 zile</option>
+                    <option>10 zile</option>
+                  </select>
+                  </div>
+                  </div>
+                 </div>
+
+                 <div class="parttwosearch">
+                  <div class="w3-col w3-container" style="width:100px">
+                  <label>Adulti</label>
+                  <!-- <input class="w3-input w3-border" type="text" placeholder="One"> -->
+                  <select class="w3-input w3-border">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                  </select>
+                  </div>
+                  
+                
+                <div class="w3-col w3-container" style="width:100px">
+                <label>Copii(0-14)</label>
+                <!-- <input class="w3-input w3-border" type="text" placeholder="One"> -->
+                <select class="w3-input w3-border">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+                </div>
+
+                <div class="w3-col w3-container" style="width:100px">
+                  <label>.</label>
+                  <input class="w3-input w3-border" type="submit" placeholder="One" value="CAUTA VACANTA">
+                  </div>
+                </div>
+                <a href="#">+ Adauga camera</a>
+              </div>
+            </div>
+          </section><br>
+
+          <div id="banner">
+            <img class="t-hp-top-img1" src="https://intern.travelbrands.ro/web/global/img/220214-Banner_targ2_1170x210px.jpg" alt="" style="width: 100%; max-width: 1170px;">
+          </div><br>
+
+          <section id="mysection">
+            <div class="tab">
+              <button class="tablinksy" style="background-color:#092a5e; color: white;" onclick="openCards(event, 'Cards')">VACANTE EXOTICE</button>
+              <button class="tablinksy" onclick="openCards(event, 'Paris')">EARLY BOOKING 2022</button>
+            </div>
+            
+            <!-- Tab content -->
+            <div id="Cards" class="tabcontenty">
+
+              <div class="stylecards">
+                <div class="cardone">
+                  <h2>CANCUN,<br> MEXIC</h2>
+                  <span>de la <strong>1400$</strong></span>
+                </div>
+
+                <div class="cardtwo">
+                  <h2>REPUBLICA<br> DOMINICANA</h2>
+                  <span>de la <strong>1400$</strong></span>
+                </div>
+
+                <div class="cardthr">
+                  <h2>KENYA</h2>
+                  <span>de la <strong>1400$</strong></span>
+                </div>
+
+                <div class="cardfour">
+                  <h2>ZANZIBAR</h2>
+                  <span>de la <strong>1400$</strong></span>
+                </div>
+
+              </div>
+
+              </div>
+              
+            
+            <div id="Paris" class="tabcontenty">
+              <div class="stylecards">
+                <div class="cardone">
+                  <h2>CANCUN,<br> MEXIC</h2>
+                  <span>de la <strong>1400$</strong></span>
+                </div>
+
+                <div class="cardtwo">
+                  <h2>REPUBLICA<br> DOMINICANA</h2>
+                  <span>de la <strong>1400$</strong></span>
+                </div>
+
+                <div class="cardthr">
+                  <h2>KENYA</h2>
+                  <span>de la <strong>1400$</strong></span>
+                </div>
+
+              </div>
+            </div>
+            
+          </section>
+           
+          <section id="section-slide-pack">
+            <center><h3><b>Peste 50 de consultanți Dertour disponibili</b></h3>
+              <span>in intervalul orar 10:00 - 20:00</span><br>
+              <button class="mybtn">Start conversatie</button></center><br>
+
+              <div class="container">
+                <div class="slide fade">
+                  <div class="numbertext">1 / 3</div>
+                  <div class="slideDetails red"> </div>
+                  <div class="text">
+                    <h3>Ras Al Khaimah</h3>
+                    <span>Plecări din București și Cluj-Napoca</span><br><br>
+                    <button class="mybtnslide">Vezi detalii</button>
+                  
+                  </div>
+                </div>
+              
+                <div class="slide fade">
+                  <div class="numbertext">2 / 3</div>
+                  <div class="slideDetails green"> </div>
+                  <div class="text">
+                    <h3>Vacanță în Dubai</h3>
+                    <span>Plecări din București și Cluj-Napoca</span><br><br>
+                    <button class="mybtnslide">Vezi ofertele</button>
+                  </div>
+                </div>
+              
+                <div class="slide fade">
+                  <div class="numbertext">3 / 3</div>
+                  <div class="slideDetails blue"> </div>
+                  <div class="text">
+                    <h3>Early Booking 2022</h3>
+                    <span>Grecia, Turcia, Egipt, Tunisia, Tenerife</span><br><br>
+                    <button class="mybtnslide">Vezi ofertele</button>
+                  </div>
+                </div>
+              
+                <a class="prev" onclick="manualControl(-1)">&#10094;</a>
+                <a class="next" onclick="manualControl(1)">&#10095;</a>
+              </div>
+              
+              <div class="center">
+                <span class="dot fade" onclick="currentSlide(1)"></span>
+                <span class="dot fade" onclick="currentSlide(2)"></span>
+                <span class="dot fade" onclick="currentSlide(3)"></span>
+              </div><br>
+
+
+              <h2 style="text-align: center; text-transform: uppercase;">Profită de ofertele speciale 2022</h2>
+
+              <div class="bigcontainer">
+              <div class="containercardspromo">
+                <img src="https://www.dertour.ro/library/media/dertour/modules/services-collection/images/egipt2022.jpg?h=250&la=ro-RO&w=385&hash=0EA8566574CF67ECFEE6E5A89E2FA734CA4A1609" alt="Avatar" class="image" style="width:100%">
+                <div class="middle">
+                  <div class="textpromo"> <a href="Pachete Egipt.html">Vezi ofertele</a></div>
+                </div>
+                <h4>Pachete Charter Egipt</h4><br>
+                <hr>
+                <h6>Profita de reduceri</h6>
+              </div>
+              
+            
+
+              <div class="containercardspromo">
+                <img src="https://www.dertour.ro/library/media/dertour/modules/services-collection/images/emirate2022.jpg?h=250&la=ro-RO&w=385&hash=0C49AC62F43818E20974A254BFCE2FE4919F2C3D" alt="Avatar" class="image" style="width:100%">
+                <div class="middle">
+                  <div class="textpromo"><a href="Pachete Emiratele Arabe.html">Vezi ofertele</a></div>
+                </div>
+                <h4>Pachete Emiratele Arabe</h4><br>
+                <hr>
+                <h6>Profita de reduceri</h6>
+              </div>
+
+              <div class="containercardspromo">
+                <img src="https://www.dertour.ro/library/media/dertour/modules/services-collection/images/shutterstock_179080052.jpg?h=250&la=ro-RO&w=385&hash=8EAC9D7EF41F9E077C41256256D996314CCF898F" alt="Avatar" class="image" style="width:100%">
+                <div class="middle">
+                  <div class="textpromo"><a href="Pachete Mexic.html">Vezi ofertele</a></div>
+                </div>
+                <h4>Pachete Mexic</h4><br>
+                <hr>
+                <h6>Profita de reduceri</h6>
+              </div>
+
+              <div class="containercardspromo">
+                <img src="http://storage0.dms.mpinteractiv.ro/media/2/2621/33526/15109494/1/italia.jpg" alt="Avatar" class="image" style="width:100%">
+                <div class="middle">
+                  <div class="textpromo">Vezi ofertele</div>
+                </div>
+                <h4>Pachete Charter Italia</h4><br>
+                <hr>
+                <h6>Profita de reduceri</h6>
+              </div>
+              
+            
+
+              <div class="containercardspromo">
+                <img src="https://replica-storage.fra1.cdn.digitaloceanspaces.com/media/photos/2021-06-09/replica-637f9d18cdc608841ba9ae39b7ac13aa_1280x720_fill.jpg" alt="Avatar" class="image" style="width:100%">
+                <div class="middle">
+                  <div class="textpromo">Vezi ofertele</div>
+                </div>
+                <h4>Pachete Spania</h4><br>
+                <hr>
+                <h6>Profita de reduceri</h6>
+              </div>
+
+              <div class="containercardspromo">
+                <img src="https://th.bing.com/th/id/OIP.-3_FMTT0jblKseVGqrutTwHaEK?pid=ImgDet&rs=1" alt="Avatar" class="image" style="width:100%">
+                <div class="middle">
+                  <div class="textpromo">Vezi ofertele</div>
+                </div>
+                <h4>Pachete Portugalia</h4><br>
+                <hr>
+                <h6>Profita de reduceri</h6>
+              </div>
+            </div>
+
+              <h2 style="text-align: center; text-transform: uppercase;">TOP HOTELS - FAMILIA DERTOUR</h2>
+
+              <div class="bigcontainer">
+              <div class="containercardspromo">
+                <img src="https://www.dertour.ro/library/media/dertour/modules/services-collection/images/club-calimera-akassia-swiss-resort_385-250.jpg?h=250&la=ro-RO&w=385&hash=C3975D1D2092BEC1C1C37047621A69C09D0B8BD5" alt="Avatar" class="image" style="width:100%">
+                <div class="middle">
+                  <div class="textpromo"><a href="Calimera Akassia Swiss Resort 5 - Egipt.html">Calimera Akassia Swiss Resort 5* - Egipt</a></div>
+                </div>
+                <h5>Calimera Akassia Swiss Resort 5* - Egipt</h5>
+                <hr>
+              </div>
+              
+            
+
+              <div class="containercardspromo">
+                <img src="https://www.dertour.ro/library/media/dertour/modules/services-collection/images/calimera-serra-palace_385-250.jpg?h=250&la=ro-RO&w=385&hash=12746AD1F9283D9B2D97EA5399B857E5A57F3DA6" alt="Avatar" class="image" style="width:100%">
+                <div class="middle">
+                  <div class="textpromo"><a href="Club Calimera Serra Palace.html">Club Calimera Serra Palace 5* - Side, Antalya</a></div>
+                </div>
+                <h5>Club Calimera Serra Palace 5* - Side, Antalya</h5>
+                <hr>
+              </div>
+
+              <div class="containercardspromo">
+                <img src="https://www.dertour.ro/library/media/dertour/modules/services-collection/images/cooee-alpin-hotel-kitzbheler-alpen_385-250.jpg?h=250&la=ro-RO&w=385&hash=79614FD9A4C2005DFC352D606C0D1E42007DCD89" alt="Avatar" class="image" style="width:100%">
+                <div class="middle">
+                  <div class="textpromo">COOEE alpin Hotel Kitzbüheler Alpen 3* - Austria</div>
+                </div>
+                <h5>COOEE alpin Hotel Kitzbüheler Alpen 3* - Austria</h5>
+                <hr>
+              </div>
+
+
+
+
+              <div class="containercardspromo">
+                <img src="https://www.dertour.ro/library/media/dertour/modules/services-collection/images/casa-marina_385-250.jpg?h=250&la=ro-RO&w=385&hash=71FED939320A5BE6B259C209C35EC038CF57E57A" alt="Avatar" class="image" style="width:100%">
+                <div class="middle">
+                  <div class="textpromo">Casa Marina Reef & Casa Marina Beach 4* - Punta Cana</div>
+                </div>
+                <h5>Casa Marina Reef & Casa Marina Beach 4* - Punta Cana</h5>
+                <hr>
+              </div>
+              
+            
+
+              <div class="containercardspromo">
+                <img src="https://www.dertour.ro/library/media/dertour/modules/services-collection/images/oblu-by-atmosphere-at-helengeli_385-250.jpg?h=250&la=ro-RO&w=385&hash=B55DF00BD213ADA96A96184FFA6362E0ACD824AA" alt="Avatar" class="image" style="width:100%">
+                <div class="middle">
+                  <div class="textpromo">COOEE OBLU at Helengeli 4* - Maldive</div>
+                </div>
+                <h5>COOEE OBLU at Helengeli 4* - Maldive</h5>
+                <hr>
+              </div>
+
+              <div class="containercardspromo">
+                <img src="https://www.dertour.ro/library/media/dertour/modules/services-collection/images/prima-life-makadi-spa_385-250.jpg?h=250&la=ro-RO&w=385&hash=99E88825728FF1B419FDCB614D42973BFFD77BEA" alt="Avatar" class="image" style="width:100%">
+                <div class="middle">
+                  <div class="textpromo">COOEE Prima Life Makadi Resort 5* - Hurghada</div>
+                </div>
+                <h5>COOEE Prima Life Makadi Resort 5* - Hurghada</h5>
+                <hr>
+              </div>
+
+
+
+              <div class="containercardspromo">
+                <img src="https://www.dertour.ro/library/media/dertour/modules/services-collection/images/lti-bellevue-park_385-250.jpg?h=250&la=ro-RO&w=385&hash=E290371A6A939453F12A7832E4CCAE4FDB2B5CCF" alt="Avatar" class="image" style="width:100%">
+                <div class="middle">
+                  <div class="textpromo">lti Bellevue Park 5* - Tunisia</div>
+                </div>
+                <h5>lti Bellevue Park 5* - Tunisia</h5>
+                <hr>
+              </div>
+              
+            
+
+              <div class="containercardspromo">
+                <img src="https://www.dertour.ro/library/media/dertour/modules/services-collection/images/lti-djerba-plaza-thalasso--spa3852501.jpg?h=250&la=ro-RO&w=385&hash=14EA59949986E36DABF74FE58FBB2F31376B46D7" alt="Avatar" class="image" style="width:100%">
+                <div class="middle">
+                  <div class="textpromo">lti Djerba Plaza Thalasso & Spa 4* - Tunisia</div>
+                </div>
+                <h5>lti Djerba Plaza Thalasso & Spa 4* - Tunisia</h5>
+                <hr>
+              </div>
+
+              <div class="containercardspromo">
+                <img src="https://www.dertour.ro/library/media/dertour/modules/services-collection/images/lti-les-orangers-garden-villas-and-bungalows_385-250.jpg?h=250&la=ro-RO&w=385&hash=DB1447522EFB25D7CE73AF632CE6964173555DCB" alt="Avatar" class="image" style="width:100%">
+                <div class="middle">
+                  <div class="textpromo">lti Les Orangers Garden Villas & Bungalows 3* - Tunisia</div>
+                </div>
+                <h5>lti Les Orangers Garden Villas & Bungalows 3* - Tunisia</h5>
+                <hr>
+              </div>
+
+
+
+              <div class="containercardspromo">
+                <img src="https://www.dertour.ro/library/media/dertour/modules/services-collection/images/maafushivaru-island_385-250.jpg?h=250&la=ro-RO&w=385&hash=67177002E6E05DB4B398E3F6180D7897F64AB78C" alt="Avatar" class="image" style="width:100%">
+                <div class="middle">
+                  <div class="textpromo">lti Maafushivaru Maldives 5* - Maldive</div>
+                </div>
+                <h5>lti Maafushivaru Maldives 5* - Maldive</h5>
+                <hr>
+              </div>
+              
+            
+
+              <div class="containercardspromo">
+                <img src="https://www.dertour.ro/library/media/dertour/modules/services-collection/images/lti-mahdia-beach_385-250.jpg?h=250&la=ro-RO&w=385&hash=9AFC84E694B122634AC8EDA0ECC40761E688F2E1" alt="Avatar" class="image" style="width:100%">
+                <div class="middle">
+                  <div class="textpromo">lti Mahdia Beach 4* - Tunisia</div>
+                </div>
+                <h5>lti Mahdia Beach 4* - Tunisia</h5>
+                <hr>
+              </div>
+
+              <div class="containercardspromo">
+                <img src="https://www.dertour.ro/library/media/dertour/modules/services-collection/images/el-mehdi-a_385-250.jpg?h=250&la=ro-RO&w=385&hash=174C819D8C2C7FA5522AC28899B05E6CEA2E96A2" alt="Avatar" class="image" style="width:100%">
+                <div class="middle">
+                  <div class="textpromo">PrimaSol El Mehdi 4* - Tunisia</div>
+                </div>
+                <h5>PrimaSol El Mehdi 4* - Tunisia</h5>
+                <hr>
+              </div>
+
+
+
+              <div class="containercardspromo">
+                <img src="https://www.dertour.ro/library/media/dertour/modules/services-collection/images/prim-sol-telatiye_385-250.jpg?h=250&la=ro-RO&w=385&hash=2439DC9D11ACB2B178475CEF4437C9FCFF8DB9FD" alt="Avatar" class="image" style="width:100%">
+                <div class="middle">
+                  <div class="textpromo">PrimaSol Telatiye Resort 5* - Antalya</div>
+                </div>
+                <h5>PrimaSol Telatiye Resort 5* - Antalya</h5>
+                <hr>
+              </div>
+              
+            
+
+              <div class="containercardspromo">
+                <img src="https://www.dertour.ro/library/media/dertour/modules/services-collection/images/sentido-mamlouk-palace-resort_385-250.jpg?h=250&la=ro-RO&w=385&hash=5181142E4CC4B755CF96023BE83B9400C3A151C2" alt="Avatar" class="image" style="width:100%">
+                <div class="middle">
+                  <div class="textpromo">Sentido Mamlouk Palace Resort 5* - Hurghada</div>
+                </div>
+                <h5>Sentido Mamlouk Palace Resort 5* - Hurghada</h5>
+                <hr>
+              </div>
+
+              <div class="containercardspromo">
+                <img src="https://www.dertour.ro/library/media/dertour/modules/services-collection/images/solana-beach_385-250.jpg?h=250&la=ro-RO&w=385&hash=3086B9A18462431CB992025B84D642BBE433AF74" alt="Avatar" class="image" style="width:100%">
+                <div class="middle">
+                  <div class="textpromo">COOEE Solana Beach 4* - Mauritius</div>
+                </div>
+                <h5>COOEE Solana Beach 4* - Mauritius</h5>
+                <hr>
+              </div>
+
+              </div>
+              
+              <h2 style="text-align: center; text-transform: uppercase;">Mai Multe Servicii</h2>
+
+              <div class="bigcontainer" id="mybg">
+              <div class="containercardspromotwo">
+                <img src="https://www.dertour.ro/library/media/dertour/modules/services-collection/images/croaziera_shutterstock_269340617_375-142.jpg?h=142&la=ro-RO&w=375&hash=A7FB7C21DD309E1D38F11BD373D3746E01178A8A" alt="Avatar" class="imagetwo" style="width:100%">
+                <div class="middle">
+                  <div class="textpromo">Vezi ofertele</div>
+                </div>
+                <h4>Croaziere</h4>
+                <hr>
+                <h6>Alege confortul unui vas de croaziera si porneste in explorarea destinatiilor dorite!</h6>
+              </div>
+              
+            
+
+              <div class="containercardspromotwo">
+                <img src="https://www.dertour.ro/library/media/dertour/modules/services-collection/images/circuite_shutterstock_141461842_375-142.jpg?h=142&la=ro-RO&w=375&hash=60BDBC32C71B03B29B2BBB5BA1776283CF431A64" alt="Avatar" class="imagetwo" style="width:100%">
+                <div class="middle">
+                  <div class="textpromo">Vezi ofertele</div>
+                </div>
+                <h4>Circuite turistice</h4>
+                <hr>
+                <h6>O vacanta, mai multe destinatii - alege un circuit turistic!</h6>
+              </div>
+
+              <div class="containercardspromotwo">
+                <img src="https://www.dertour.ro/library/media/dertour/modules/services-collection/images/bilete-de-avion_380-141.jpg?h=141&la=ro-RO&w=380&hash=822275DB4B37195B32083A3F0297D82911D5D925" alt="Avatar" class="imagetwo" style="width:100%">
+                <div class="middle">
+                  <div class="textpromo">Vezi ofertele</div>
+                </div>
+                <h4>Bilete de avion</h4>
+                <hr>
+                <h6>Gaseste bilete de avion la cele mai bune tarife pentru calatoriile tale in Romania sau in strainatate.</h6>
+              </div>
+
+
+
+
+              <div class="containercardspromotwo">
+                <img src="https://www.dertour.ro/library/media/dertour/modules/services-collection/images/autocar.jpg?h=141&la=ro-RO&w=380&hash=7492D2C47CA49C12C36859F10BD8DE9F0C35BCBD" alt="Avatar" class="imagetwo" style="width:100%">
+                <div class="middle">
+                  <div class="textpromo">Vezi ofertele</div>
+                </div>
+                <h4>Bilete de autocar</h4>
+                <hr>
+                <h6>Autocarul iti ofera o calatorie confortabila si posibilitatea de a vedea peisajele de pe drum.</h6>
+              </div>
+              
+            
+
+              <div class="containercardspromotwo">
+                <img src="https://www.dertour.ro/library/media/dertour/modules/services-collection/images/email.png?h=141&la=ro-RO&w=380&hash=AEED0235514FB1D3CDA4517E1994B549D10B484F" alt="Avatar" class="imagetwo" style="width:100%">
+                <div class="middle">
+                  <div class="textpromo">Vezi ofertele</div>
+                </div>
+                <h4>Solicita oferta personalizata</h4>
+                <hr>
+                <h6>Pentru ca suntem alaturi de tine, ne poti solicita o cerere de vacanta. Completeaza formularul si un consultant Dertour te va consilia in alegerea vacantei perfecte.</h6>
+              </div>
+
+              <div class="containercardspromotwo">
+                <img src="https://www.dertour.ro/library/media/dertour/modules/services-collection/images/vouchere-cadou_200_top.jpg?h=142&la=ro-RO&w=383&hash=06CCBA04E5E9BAB71EF5E0FDDAD74CC554F206FF" alt="Avatar" class="imagetwo" style="width:100%">
+                <div class="middle">
+                  <div class="textpromo">Vezi ofertele</div>
+                </div>
+                <h4>Vouchere cadou</h4>
+                <hr>
+                <h6>Cate un cadou pentru fiecare ocazie. Surprinde-i pe cei dragi cu un voucher ce poate reprezenta cadoul perfect pentru un inceput de vacanta asa cum au visat.</h6>
+              </div>
+            </div>
+
+
+            <h2 style="text-align: center; text-transform: uppercase;">VEZI CELE MAI NOI OFERTE DE VACANTA</h2>
+
+              <div class="bigcontainer">
+              <div class="containercardspromo">
+                <img src="https://www.dertour.ro/library/media/dertour/modules/services-collection/banner/201111-banner_webiste_ai.jpg?h=250&la=ro-RO&w=375&hash=047A60468A6111FEAD67770955156952E2D7DD8D" alt="Avatar" class="image" style="width:100%">
+                <div class="middle">
+                  <div class="textpromo">Vezi ofertele</div>
+                </div>
+                <hr>
+              </div>
+              
+            
+
+              <div class="containercardspromo">
+                <img src="https://www.dertour.ro/library/media/dertour/modules/services-collection/banner/201111-banner_webiste_lm.jpg?h=250&la=ro-RO&w=375&hash=B859A14FED9D2F6A12A90CD7AC99436A13F51111" alt="Avatar" class="image" style="width:100%">
+                <div class="middle">
+                  <div class="textpromo">Vezi ofertele</div>
+                </div>
+                <hr>
+              </div>
+
+              <div class="containercardspromo">
+                <img src="https://www.dertour.ro/library/media/dertour/modules/services-collection/banner/201111-banner_webiste_os.jpg?h=250&la=ro-RO&w=375&hash=3DE7E82FFF0605E23AB176EBFB145EEBF2F7897B" alt="Avatar" class="image" style="width:100%">
+                <div class="middle">
+                  <div class="textpromo">Vezi ofertele</div>
+                </div>
+                <hr>          
+              </div>
+            </div><br>
+
+            
+
+          </div>
+          </section>
+          <div class="newsletter">
+            <div>
+              <h3>Aboneaza-te la Newsletter </h3>
+              <p>si vei afla primul de cele mai noi oferte si promotii, ale noastre sau ale partenerilor selectati, informatii despre concursuri sau campanii cu premii, chestionare de evaluare ale serviciilor oferite si multe alte surprize</p>
+            </div>
+
+            <div>
+              <form>
+              <input type="email" placeholder="Adresa ta de E-mail">
+              <button class="mybtnpack">Aboneaza-ma!</button><br>
+              <input type="checkbox" id="checkone" name="checkone">
+              <label for="checkone" style="display: ruby-text-container;"> Sunt de acord cu Politica de confidentialitate</label>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div id="footer" class="col-sm">
+            <div class="divfooterone">
+              Link-uri utile
+              <ul>
+                <li><i class="fa fa-caret-right"></i> Clinici partenere testare SARS Cov-2</li>
+                <li><i class="fa fa-caret-right"></i> Liste zone afectate COVID-19</li>
+                <li><i class="fa fa-caret-right"></i> Contract cu Turistul</li>
+                <li><i class="fa fa-caret-right"></i> Cariere</li>
+                <li><i class="fa fa-caret-right"></i> Conditii de Utilizare</li>
+                <li><i class="fa fa-caret-right"></i> Modalitati de plata</li><br>
+                <li><i class="fa fa-caret-right"></i> Conditii de calatorie</li>
+                <li><i class="fa fa-caret-right"></i> Agentii / Contact</li><br>
+                <li><i class="fa fa-caret-right"></i> ANPC</li>
+              </ul>
+            </div>
+            <div class="divfootertwo">
+              <ul><br>
+                <li><i class="fa fa-caret-right"></i> Info utile conditii de calatorie in contextul COVID 19</li>
+                <li><i class="fa fa-caret-right"></i> Cataloage DERTOUR</li>
+                <li><i class="fa fa-caret-right"></i> Despre noi</li>
+                <li><i class="fa fa-caret-right"></i> Vouchere de vacanta</li>
+                <li><i class="fa fa-caret-right"></i> Acte necesare calatoriei</li>
+                <li><i class="fa fa-caret-right"></i> Business Travel</li>
+                <li><i class="fa fa-caret-right"></i> Politica de prelucrare a datelor</li>
+                <li><i class="fa fa-caret-right"></i> Politica privind Cookies</li>
+                <li><i class="fa fa-caret-right"></i> Drepturi Ordonanta Guvernului nr 2 din 2018</li>
+              </ul>
+            </div>
+            <div class="divfooterthr">
+              
+             <div style="float: right;margin-right: 5%;">
+         
+              </div>
+              <h5>Cataloage si brosuri</h5>
+
+             <div class="allimagebanner">
+              <div class="image-banner-footer">
+                <img src="https://www.dertour.ro/library/media/dertour/common/footer/brochure-and-catalogs/dertour-life.jpg?h=419&la=ro-RO&w=320&hash=6E8133BBAEE03ABA30D050B28BCE34053DD7CDB9" width="100%">
+              </div>
+
+              <div class="image-banner-footer">
+                <img src="https://www.dertour.ro/library/media/dertour/common/footer/brochure-and-catalogs/dertour-life/der-ian2021.jpg?h=426&la=ro-RO&w=320&hash=3DB124AEBC3DC43E50857457C9DA905A26B755CE" width="100%">
+              </div>
+
+              <div class="image-banner-footer">
+                <img src="https://www.dertour.ro/library/media/dertour/common/footer/brochure-and-catalogs/catalog-grecia.jpg?h=426&la=ro-RO&w=320&hash=EE6C7898AA1C2A824F480624E9EC1E429BED5605" width="100%">
+              </div>
+            </div>
+
+
+            </div>
+            <div class="divfooterfour">
+              <h5>Urmareste-ne si pe Social Media</h5>
+              <div class="socialmedia">
+              <i class="fa fa-facebook-square"></i>
+              <i class="fa fa-instagram"></i>
+              <i class="fa fa-wordpress"></i>
+              <i class="fa fa-youtube"></i>
+              </div>
+             <h5> Plateste online si in siguranta</h5>
+              <div class="socialmedia">
+              <i class="fa fa-cc-visa"></i>
+              <i class="fa fa-cc-mastercard"></i>
+              <i class="fa fa-credit-card"></i>
+              <i class="fa fa-cc-paypal"></i>
+              </div>
+            </div>
+        </div>
+
+        <div class="footerfinal">
+          <strong>Tariful final al ofertelor afisate pe site se regaseste in ultimul pas al rezervarii, inainte de initierea procesului de plata.
+          </strong>
+          <p style="text-align: center;">Copyright © 2021</p>
+          <p style="text-align: center;">Site-ul www.dertour.ro este proprietatea DER Touristik Deutschland Gmbh si este operat de TRAVEL BRANDS S.A.</p>
+          <p style="text-align: center;"><span style="text-align: center; color: #2d3132;">TRAVEL BRANDS SA, cu sediul social in Bucuresti, Strada Reinvierii 3-5, Etaj 1, Sector 2 </span></p>
+          <p style="text-align: center;"><span style="text-align: center; color: #2d3132;">J40/5790/2018, CUI 39257566.</span></p>
+          <p style="text-align: center;"><a href="/library/media/dertour/documents/brevet_turism_-_cosmin_marinof.pdf?la=ro-ro">Brevet de turism</a> <a href="/library/media/dertour/documents/licenta-turism.pdf?la=ro-ro" target="_blank">-</a>&nbsp;<a href="https://www.dertour.ro/library/media/dertour/documents/LicentaTB03092020.pdf">Licenta de turism</a>&nbsp;- <a href="/library/media/dertour/documents/anexalicentaturism0410021.pdf?la=ro-ro">Anexa la licenta de turism</a></p>
+          <p style="text-align: center;"><strong>.</strong></p>
+          <p style="text-align: center;"><strong><strong style="color: #222222; background-color: #ffffff;"><a href="/library/media/dertour/documents/sgb-ministerul-turismului-34gbe2021-7616.pdf?la=ro-ro">Scrisoare de garantie bancara nr. 34GBE2021-7616</a></strong></strong></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

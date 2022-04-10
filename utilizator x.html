@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Der Tour utilizator </title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="  crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <script>
+    $(document).ready(function() {
+
+        $('#b1').click(function() {
+            $('#p1').text('Numele: ' + $('#in1').val());
+            $('#p2').text('Prenumele: ' + $('#in2').val());
+            $('#p3').text('Data nasterii: ' + $('#in3').val());
+            $('#p4').text('Adresa de Email: ' + $('#in6').val());
+            alert('Datele au fost salvate cu succes!')
+        });
+
+        $('#b9').click(function() {
+            $('#img1').attr("src", $('#in0').val());
+        });
+
+        $('#p5').click(function() {
+            $(this).text('Astazi este: ' + Date());
+        });
+
+        $("input").focus(function() {
+            $(this).css("background", "#f1f1f1");
+        });
+
+        $('#b22').click(function() {
+            window.location.href = ("signin.html");
+            alert("Esti sigur ca renunti la modificari?")
+        });
+    });
+</script>
+<style>
+    div {
+        text-align: center;
+        margin: auto;
+    }
+    
+    p {
+        text-align: center;
+    }
+    
+    body {
+        background: ;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+</style>
+<br><br>
+
+<div class="container">
+    <div class="row" style="color: #a8d0e6;">
+        <div class="col-2"></div>
+        <div class="col-3">
+            <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" class="img img-fluid" id="img1" style="position:relative; left:-250px">
+            </br>
+            <button id="b9" class="btn btn-default" style="color: #05386b;position:relative; left:-250px">Incarca imaginea</button>
+        </div>
+      
+    </div>
+
+    <form class="form-horizontal" style="color: #05386b;">
+
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="poza">Poza de profil:</label>
+            <div class="col-sm-10 col-md-9 col-lg-8 col-xl-6">
+                <input type="text" class="form-control" id="in0" placeholder="link imagine" name="poza">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="name">Nume:</label>
+            <div class="col-sm-10 col-md-9 col-lg-8 col-xl-6">
+                <input type="text" class="form-control" id="in1" placeholder="Scrie numele" name="name">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="surname">Prenume:</label>
+            <div class="col-sm-10 col-md-9 col-lg-8 col-xl-6">
+                <input type="text" class="form-control" id="in2" placeholder="Scrie prenumele" name="surname">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="date">Data nasterii:</label>
+            <div class="col-sm-10 col-md-9 col-lg-8 col-xl-6">
+                <input type="date" class="form-control" id="in3" placeholder="Scrie data nasterii" name="date">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <p>
+                    Genul:
+                </p>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="sex" id="in4" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">Masculin</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="sex" id="in5" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">Feminin</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="email">E-mail:</label>
+            <div class="col-sm-10 col-md-9 col-lg-8 col-xl-6">
+                <input type="email" class="form-control" id="in6" placeholder="Scrie adresa de e-mail" name="email">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="pwd">Parola:</label>
+            <div class="col-sm-10 col-md-9 col-lg-8 col-xl-6">
+                <input type="password" class="form-control" id="in7" placeholder="Scrie parola" name="pwd">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <div class="checkbox">
+                    <label><input type="checkbox" name="remember"> Retine parola</label>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <button class="btn btn-default" id="b1" style="background-color:#f76c6c ;">Salveaza datele</button>
+    <button class="btn btn-default" id="b22"style="background-color:#f76c6c;">Renunta</button>
+</div>
+
+<div class="footerfinal">
+<strong>Tariful final al ofertelor afisate pe site se regaseste in ultimul pas al rezervarii, inainte de initierea procesului de plata.
+</strong>
+<p style="text-align: center;">Copyright © 2021</p>
+<p style="text-align: center;">Site-ul www.dertour.ro este proprietatea DER Touristik Deutschland Gmbh si este operat de TRAVEL BRANDS S.A.</p>
+<p style="text-align: center;"><span style="text-align: center; color: #2d3132;">TRAVEL BRANDS SA, cu sediul social in Bucuresti, Strada Reinvierii 3-5, Etaj 1, Sector 2 </span></p>
+<p style="text-align: center;"><span style="text-align: center; color: #2d3132;">J40/5790/2018, CUI 39257566.</span></p>
+<p style="text-align: center;"><a href="/library/media/dertour/documents/brevet_turism_-_cosmin_marinof.pdf?la=ro-ro">Brevet de turism</a> <a href="/library/media/dertour/documents/licenta-turism.pdf?la=ro-ro" target="_blank">-</a>&nbsp;<a href="https://www.dertour.ro/library/media/dertour/documents/LicentaTB03092020.pdf">Licenta de turism</a>&nbsp;- <a href="/library/media/dertour/documents/anexalicentaturism0410021.pdf?la=ro-ro">Anexa la licenta de turism</a></p>
+<p style="text-align: center;"><strong>.</strong></p>
+<p style="text-align: center;"><strong><strong style="color: #222222; background-color: #ffffff;"><a href="/library/media/dertour/documents/sgb-ministerul-turismului-34gbe2021-7616.pdf?la=ro-ro">Scrisoare de garantie bancara nr. 34GBE2021-7616</a></strong></strong></p>
+</div>
+</div>
+</div>
+<script src="script.js"></script>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
